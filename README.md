@@ -1,10 +1,8 @@
 # `Cardiac` Sample
 
-The `guided iso3dfd GPUOptimization` sample demonstrates how to use the Intel&reg; oneAPI Base Toolkit (Base Kit) and tools found in the Base Kit to optimize code for GPU offload. The ISO3DFD sample refers to Three-Dimensional Finite-Difference Wave Propagation in Isotropic Media; it is a three-dimensional stencil to simulate a wave propagating in a 3D isotropic medium.
-
-This sample follows the workflow found in [Optimize Your GPU Application with the Intel&reg; oneAPI Base Toolkit](https://www.intel.com/content/www/us/en/developer/tools/oneapi/gpu-optimization-workflow.html#gs.101gmt2).
-
-For comprehensive instructions, see the [Intel&reg; oneAPI Programming Guide](https://software.intel.com/en-us/oneapi-programming-guide) and search based on relevant terms noted in the comments.
+This is the "heart_demo" project that implements minimal functionality
+for a real-time 3D cardiac electrophysiology simulation.
+It can be launched on "host" and Intel(R) Many Integrated Core Architecture processors.
 
 | Property                       | Description
 |:---                               |:---
