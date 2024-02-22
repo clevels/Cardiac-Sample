@@ -74,9 +74,9 @@ the `VERBOSE=1` argument:
 make VERBOSE=1
 ```
 
-## Guided Build with Intel&reg; VTune&trade; Profiler
+## Guided Build with Intel&reg Advisor
 
-Below is a high-level VTune analysis to analyze performance on the CPU
+Below is a high-level Advisor analysis to analyze performance on the CPU
 
 > **Note**: The actual results and measurements may vary depending on your actual hardware.
 
