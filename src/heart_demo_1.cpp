@@ -1149,11 +1149,11 @@ int main ( int argc, char *argv[] )
      INTEL::fpga_selector device_selector;
    #else
     // The default device selector will select the most performant device.
-     default_selector device_selector;
+//     default_selector device_selector;
    #endif
 
     try {
-        device_queue.reset( new queue (device_selector) );
+        device_queue.reset( new queue (sycl::default_selector_v) );
     } catch (cl::sycl::exception const& e) {
         std::cout << "Caught a synchronous SYCL exception:" << std::endl << e.what() << std::endl;
         return EXIT_FAILURE;
