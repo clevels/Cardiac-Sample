@@ -1,4 +1,4 @@
-# `Cardiac` Sample
+# `Cardiac` Sample - CPU Analysis
 
 This is the "heart_demo" project that implements minimal functionality
 for a real-time 3D cardiac electrophysiology simulation.
