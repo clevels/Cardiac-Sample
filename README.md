@@ -6,7 +6,7 @@ It can be launched on "host" and Intel(R) Many Integrated Core Architecture proc
 
 | Property                       | Description
 |:---                               |:---
-| What you will learn               | How to build the cardiac sample ans run Advisor to analyze an MPI application running on the CPU and GPU.
+| What you will learn               | How to build the cardiac sample and run Advisor to analyze an MPI application running on the CPU and GPU.
 | Time to complete                  | 30 minutes
 
 ## Prerequisites
@@ -14,7 +14,7 @@ It can be launched on "host" and Intel(R) Many Integrated Core Architecture proc
 | Optimized for                       | Description
 |:---                               |:---
 | OS                                | Linux* Ubuntu* 18.04
-| Hardware                          | Skylake or newer
+| Hardware                          | Skylake and GEN9 or newer
 | Software                          | Intel&reg; oneAPI DPC++/C++ Compiler, MPI, OpenMP*, Intel&reg; Advisor
 
 
