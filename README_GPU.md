@@ -1,4 +1,4 @@
-# `Cardiac` Sample
+# `Cardiac` Sample - GPU Analysis
 
 This is the "heart_demo" project that implements minimal functionality
 for a real-time 3D cardiac electrophysiology simulation.
@@ -6,7 +6,7 @@ It can be launched on "host" and Intel(R) Many Integrated Core Architecture proc
 
 | Property                       | Description
 |:---                               |:---
-| What you will learn               | How to use Advisor to analyze an MPI application running on the CPU.
+| What you will learn               | How to use Advisor to analyze an MPI application running on the GPU.
 | Time to complete                  | 30 minutes
 
 ## Prerequisites
@@ -14,11 +14,11 @@ It can be launched on "host" and Intel(R) Many Integrated Core Architecture proc
 | Optimized for                       | Description
 |:---                               |:---
 | OS                                | Linux* Ubuntu* 18.04
-| Hardware                          | Skylake or newer
+| Hardware                          | Skylake and GEN9 or Newer
 | Software                          | Intel&reg; oneAPI DPC++/C++ Compiler, MPI, OpenMP*, Intel&reg; Advisor
 
 
-## Building the `Cardiac Sample` for CPU Analysis
+## Building the `Cardiac Sample` for GPU Analysis
 
 > **Note**: If you have not already done so, set up your CLI
 > environment by sourcing  the `setvars` script located in
@@ -42,13 +42,14 @@ Perform the following steps:
 1. Build the program using the following commands.
    ```
    $ cd src
-   $ mpiicpx -cxx=icpx heart_demo.cpp luo_rudy_1991.cpp rcm.cpp mesh.cpp  -o heart_demo_cpu -O3 -std=c++17 -fopenmp
+   $ mpiicpx -cxx=icpx -fsycl  heart_demo_1.cpp luo_rudy_1991.cpp rcm.cpp mesh.cpp -o heart_demo_gpu -O3 -std=c++20 -fopenmp
+
    ```
 
 2. Run the program.
    ```
    $ cd ..
-   $ mpirun -n 2 ./heart_demo_cpu -m <workload size> -s <workload size> -t 100
+   $ mpirun -n 2 ./heart_demo_gpu -m <workload size> -s <workload size> -t 100
    ```
 
 ### Application Parameters
