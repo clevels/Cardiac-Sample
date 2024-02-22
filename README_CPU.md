@@ -1,4 +1,4 @@
-# `Cardiac` Sample - CPU Analysis
+# `Cardiac` Sample
 
 This is the "heart_demo" project that implements minimal functionality
 for a real-time 3D cardiac electrophysiology simulation.
@@ -6,7 +6,7 @@ It can be launched on "host" and Intel(R) Many Integrated Core Architecture proc
 
 | Property                       | Description
 |:---                               |:---
-| What you will learn               | How to use Advisor to analyze an MPI application running on the CPU.
+| What you will learn               | How to build the cardiac sample ans run Advisor to analyze an MPI application running on the CPU and GPU.
 | Time to complete                  | 30 minutes
 
 ## Prerequisites
