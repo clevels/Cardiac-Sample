@@ -74,7 +74,7 @@ the `VERBOSE=1` argument:
 make VERBOSE=1
 ```
 
-## Guided Build with Intel&reg Advisor
+## Guided Build with Intel&reg; Advisor
 
 Below is a high-level Advisor analysis to analyze performance on the CPU
 
