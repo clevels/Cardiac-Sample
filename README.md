@@ -18,7 +18,7 @@ It can be launched on "host" and Intel(R) Many Integrated Core Architecture proc
 | Software                          | Intel&reg; oneAPI DPC++/C++ Compiler, MPI, OpenMP*, Intel&reg; Advisor
 
 
-## Building the `Cardiac Sample` for CPU Analysis
+## Building the `Cardiac Sample`
 
 > **Note**: If you have not already done so, set up your CLI
 > environment by sourcing  the `setvars` script located in
@@ -41,14 +41,14 @@ If running a sample in the Intel&reg; DevCloud, you must specify the compute nod
 Perform the following steps:
 1. Build the program using the following commands.
    ```
-   $ cd src
-   $ mpiicpx -cxx=icpx heart_demo.cpp luo_rudy_1991.cpp rcm.cpp mesh.cpp  -o heart_demo_cpu -O3 -std=c++17 -fopenmp
+   $ mkdir build
+   $ make
    ```
 
 2. Run the program.
    ```
    $ cd ..
-   $ mpirun -n 2 ./heart_demo_cpu -m <workload size> -s <workload size> -t 100
+   $ mpirun -n 2 ./<executable> -m <workload size> -s <workload size> -t 100
    ```
 
 ### Application Parameters
